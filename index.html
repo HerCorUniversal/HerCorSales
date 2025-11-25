@@ -220,7 +220,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 10rem 2rem 4rem;
+            padding: 6rem 2rem 4rem;
             position: relative;
         }
         
@@ -1014,7 +1014,7 @@
             }
             
             .hero {
-                padding-top: 12rem;
+                padding-top: 8rem;
             }
         }
         
@@ -1070,17 +1070,14 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#como-funciona">Cómo Funciona</a></li>
                 <li><a href="#planes">Planes de Pago</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
+                
                 <li><a href="#ventajas">Ventajas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </nav>
     
-    <!-- Weekly Offers Banner -->
-    <div class="offers-banner">
-        <p>🎉 ¡OFERTAS SEMANALES! Nuevos productos cada semana con increíbles descuentos <span class="highlight">Ver Ofertas →</span></p>
-    </div>
+
     
     <!-- Hero Section -->
     <section class="hero" id="inicio">
@@ -1248,52 +1245,6 @@
         </div>
     </section>
     
-    <!-- Weekly Offers Section -->
-    <section class="weekly-offers" id="ofertas">
-        <div class="section-title">🔥 Ofertas de la Semana</div>
-        <p class="section-subtitle">
-            ¡Nuevos productos cada semana con precios increíbles!
-        </p>
-        
-        <div class="offers-grid">
-            <div class="offer-card scroll-reveal">
-                <div class="offer-image">📱</div>
-                <h3 class="offer-title">Smartphone Gama Media</h3>
-                <div class="offer-price">
-                    <span class="weekly">$299/semana</span>
-                    <span class="period">por 12 semanas</span>
-                </div>
-                <p class="offer-total">Precio total: $3,588 MXN</p>
-                <a href="#contacto" class="offer-btn">¡Lo Quiero!</a>
-            </div>
-            
-            <div class="offer-card scroll-reveal">
-                <div class="offer-image">🎧</div>
-                <h3 class="offer-title">Audífonos Bluetooth</h3>
-                <div class="offer-price">
-                    <span class="weekly">$89/semana</span>
-                    <span class="period">por 8 semanas</span>
-                </div>
-                <p class="offer-total">Precio total: $712 MXN</p>
-                <a href="#contacto" class="offer-btn">¡Lo Quiero!</a>
-            </div>
-            
-            <div class="offer-card scroll-reveal">
-                <div class="offer-image">💻</div>
-                <h3 class="offer-title">Laptop para Trabajo</h3>
-                <div class="offer-price">
-                    <span class="weekly">$499/semana</span>
-                    <span class="period">por 24 semanas</span>
-                </div>
-                <p class="offer-total">Precio total: $11,976 MXN</p>
-                <a href="#contacto" class="offer-btn">¡Lo Quiero!</a>
-            </div>
-        </div>
-        
-        <p style="text-align: center; margin-top: 3rem; color: var(--text-secondary);">
-            * Las ofertas cambian cada semana. ¡Síguenos para no perderte ninguna!
-        </p>
-    </section>
     
     <!-- Features Section -->
     <section class="features" id="ventajas">
@@ -1451,15 +1402,6 @@
             observer.observe(el);
         });
         
-        // Animate offers banner
-        const offersBanner = document.querySelector('.offers-banner');
-        offersBanner.addEventListener('click', () => {
-            document.querySelector('#ofertas').scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        });
-        offersBanner.style.cursor = 'pointer';
     </script>
 </body>
 </html>
